@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swagger-ui {
+	padding-top: 5rem;
+}
+
+html,
+body {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.no-select {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.loginBg {
+	height: 100vh;
+}
+
+.loginImage {
+	height: 100vh;
+	background-size: cover;
+}
+
+body {
+	font-family: lato;
+}
+
+.input {
+	border: solid 1px #05402c;
+}
+
+.button {
+	border: solid 1px black;
+}
+.errorLabel {
+	color: red;
+}

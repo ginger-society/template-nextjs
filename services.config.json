@@ -1,0 +1,14 @@
+{
+  "schema": "1.0.0",
+  "services": [
+    {
+      "id": 1,
+      "name": "iam",
+      "prod_url": "http://localhost:8001",
+      "prod_schema_url": "/swagger/?format=openapi",
+      "stage_url": "http://localhost:8001",
+      "stage_schema_url": "/swagger/?format=openapi",
+      "auth_token_env_key": "iam_auth"
+    }
+  ]
+}

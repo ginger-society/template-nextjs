@@ -1,0 +1,17 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "liveServer.settings.port": 5502,
+  "files.exclude": {
+    ".next": false,
+    ".yalc": true,
+    "node_modules": false,
+    ".swc": true
+  }
+}

@@ -1,0 +1,23 @@
+version: '3.9'
+networks:
+    host:
+        name: host
+        external: true
+services:
+    app:
+        build:
+            dockerfile: Dockerfile.dev
+        command: /bin/sh -c "while sleep 1000; do :; done"
+        network_mode: "host"
+        ipc: "host"
+        volumes:
+            - .:/workspace:cached
+            - ~/.ssh:/root/.ssh
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /tmp/.X11-unix:/tmp/.X11-unix
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        environment:
+            - NPM_TOKEN=$NPM_TOKEN
+            - DISPLAY=host.docker.internal:0
+   
