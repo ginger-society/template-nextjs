@@ -1,5 +1,6 @@
 import { helloResponseType } from 'models/hello'
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { ServiceOne } from 'services'
 
 /**
  * @swagger
@@ -21,6 +22,10 @@ const handler = async (
 ) => {
 	// const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
 	// const data = await response.json()
+
+	const d = await ServiceOne.healthGetDataApiV1HealthGet()
+	// eslint-disable-next-line no-console
+	console.log(d)
 
 	res.json({ tasks: [] })
 }

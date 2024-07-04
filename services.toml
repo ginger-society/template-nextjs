@@ -1,0 +1,4 @@
+services = ["ServiceOne", "ServiceTwo"]
+lang = "TS"
+dir = "services"
+repo = "ginger-society/metadata-repo"
