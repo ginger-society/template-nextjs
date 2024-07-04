@@ -25,7 +25,7 @@ const handler = async (
 
 	const d = await ServiceOne.healthGetDataApiV1HealthGet()
 	// eslint-disable-next-line no-console
-	console.log(d)
+	console.log(d.status)
 
 	res.json({ tasks: [] })
 }
