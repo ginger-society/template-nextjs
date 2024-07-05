@@ -27,7 +27,7 @@ const handler = async (
 	// eslint-disable-next-line no-console
 	console.log(d.status)
 
-	res.json({ tasks: [] })
+	res.json({ tasks: [], status: d.status })
 }
 
 export default handler

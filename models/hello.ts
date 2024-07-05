@@ -7,4 +7,5 @@ interface Task {
 
 export interface helloResponseType {
 	tasks: Task[]
+	status: boolean
 }

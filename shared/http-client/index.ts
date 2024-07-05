@@ -1,18 +1,15 @@
+/* tslint:disable */
+
+/* eslint-disable */
 import { DefaultApi } from './apis'
 import { Configuration } from './runtime'
 
 export * from './runtime'
-export * from './apis'
-export * from './models'
-
-const getBaseUrl = (): string => {
-	if (typeof window !== 'undefined') return '' // browser should use relative url
-	if (process.env.VERCEL_URL != null) return `https://${process.env.VERCEL_URL}` // SSR should use vercel url
-	return `http://localhost:${process.env.PORT ?? 3000}` // dev SSR should use localhost
-}
+export * from './apis/index'
+export * from './models/index'
 
 const configuration = new Configuration({
-	basePath: getBaseUrl()
+	basePath: 'http://localhost:3000'
 })
-const apiClient = new DefaultApi(configuration)
-export default apiClient
+const client = new DefaultApi(configuration)
+export default client

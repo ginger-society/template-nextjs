@@ -1,6 +1,6 @@
 /* istanbul ignore file */
 import { STATUS_CODES } from '@/shared/constants'
-import jwt from 'jsonwebtoken'
+// import jwt from 'jsonwebtoken'
 import {
 	InvalidSessionResponse,
 	SessionResponse
@@ -33,11 +33,11 @@ const handler = async (
 	res: NextApiResponse<SessionResponse | InvalidSessionResponse>
 ) => {
 	try {
-		const data = jwt.verify(
-			req.cookies.token as string,
-			process.env.JWT_SECRET as string
-		) as SessionResponse
-		res.status(STATUS_CODES.SUCCESS).json({ ...data })
+		// const data = jwt.verify(
+		// 	req.cookies.token as string,
+		// 	process.env.JWT_SECRET as string
+		// ) as SessionResponse
+		res.status(STATUS_CODES.SUCCESS).json({ firstName: 'my name' })
 	} catch (e) {
 		res.status(STATUS_CODES.UNAUTHORIZED).json({ message: 'Invalid session' })
 	}
