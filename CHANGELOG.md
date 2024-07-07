@@ -1,5 +1,21 @@
+## 0.3.0-nightly.0 - 2024-07-07
+feat:
+ - [b93231521e](b93231521edc397da04fb36a443f22ac07d7124e) (Ginger Society Admin) feat: fixed test cases
+	
+ - [a12cbd9feb](a12cbd9feb98a8b2e254648ffbe2a9ad9c0c5859) (Ginger Society Admin) feat: fixed test cases
+	
+fix:
+ - [201d25e2a3](201d25e2a38ec6ff708d4992f4c80100608e8ae7) (Ginger Society Admin) fix: test cass
+	
+chore:
+ - [8ba14bd667](8ba14bd6670b58753036e824b46765980569ef9c) (Ginger Society Admin) chore: test fixes
+	
+ - [970099ab72](970099ab72bb44cb4ead769635688c1df94098ed) (Ginger Society Admin) chore: cleanup
+	
 ## 0.2.0-nightly.0 - 2024-07-07
 chore:
+ - [806f716cc7](806f716cc7fa4500cd4e908470f19b969d5ef1f9) (Ginger Society Admin) chore: version bump to 0.2.0-nightly.0
+	
  - [9e12e70dd5](9e12e70dd542a79a3f6e4ffe4e796710494a80d9) (Ginger Society Admin) chore: minor changes
 	
 feat:
