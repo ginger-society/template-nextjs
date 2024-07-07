@@ -40,7 +40,6 @@ yarn-error.log*
 # vercel
 .vercel
 *.tsbuildinfo
-storybook-static
 cypress/screenshots
 cypress/reports
 cypress/videos
