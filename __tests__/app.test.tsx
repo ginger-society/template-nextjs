@@ -4,9 +4,8 @@ import SignIn from '@/pages/auth/sign-in'
 import Home from '@/pages/home'
 import * as useAppContextModule from '@/shared/hooks/useAppContext'
 import { resolveTRPCPath } from '@/shared/trpc-client'
-import { act, render, screen, waitFor } from '@testing-library/react'
 import mockRouter from 'next-router-mock'
-import React from 'react'
+import React, { act } from 'react'
 import setupMockResponses from './utils/setup'
 
 jest.mock('next/router', () => require('next-router-mock'))
